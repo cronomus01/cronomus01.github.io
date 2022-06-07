@@ -1,0 +1,219 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+body{
+    background: linear-gradient(-135deg, #000000, #610094);
+}
+
+/* header navigation */
+.supreme-con {
+    display: flex;
+    flex-direction: column;
+
+    align-content: space-between;
+    height: 100vh;
+    width: 100%;
+    font-size: 15rem;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* background-color: green; */
+    padding: 2rem 5rem;
+    align-items: center;
+    font-size: 7rem ;
+
+}
+
+nav a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  justify-content: center;
+  color: white;
+}
+
+nav ul {
+    display: flex;
+    gap: 10rem;
+    align-content: center;
+    justify-content: center;
+}
+
+nav ul li {
+    display: flex;
+    list-style-type: none;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    position: relative;
+    color: white;
+    
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    background-color: #610094;
+    height: 3px;
+        width: 30%;width: 0;
+    left:  0px;
+    bottom: -0.3rem;
+    z-index: -1;
+    transition: ease-in-out 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+nav ul li.get-started a {
+    color: white;
+    background-color: #610094;
+
+}
+
+
+/* content */
+
+.main-con {
+    display: flex;
+    padding: 3rem;
+    gap: 2rem;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+
+.send-money-con {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    width:30%;
+
+
+}
+
+.send-abroad-crypto {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.send-abroad-crypto h1 {
+    font-size: 5rem;
+    margin-top: 2rem;
+    color: white;
+    width: 80%;
+}
+
+.send-money-item {
+    background-color: green;
+    display: flex;
+    font-size: 3.5rem;
+    margin-top: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 0.5rem 2rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.send-money-item .amount
+{
+    text-align: center;
+    padding-right: 5rem;
+    border-right: 0.2rem solid gray;
+}
+
+
+.send-money-item p:first-child{
+    color: gray;
+}
+.send-money-item p:last-child{
+    letter-spacing: 0.2rem;
+}
+
+.country select {
+    padding: 1.5rem;
+    width: 100%;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: black;
+}
+
+.send-btn button {
+    padding: 1.5rem;
+    width: 100%;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #610094;
+    color: white;
+    cursor: pointer;
+}
+
+.send-btn button:hover {
+    background-color:  #000000;
+
+}
+
+
+
+.send-received {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    
+}
+
+.send-received .money h3,.send-received .crypto h3 {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.send-received .money p,.send-received .crypto p {
+   line-height: 3rem;
+   color: gray;
+}
+
+
+
+
+.send-received button[type="submit"] {
+    margin-top: 1rem;
+    background: none;
+    cursor: pointer;
+color: rgb(0, 96, 175);
+    border: none;
+    margin-left: 1.5rem;
+}
+
+
+
+
+
+/* website images */
+
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
