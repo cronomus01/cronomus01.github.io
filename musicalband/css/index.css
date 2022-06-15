@@ -1,0 +1,332 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgba(179, 179, 179, 0.753);
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url(../img/header_background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, .6);
+    background-blend-mode: multiply;
+}
+
+
+.main-header {
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    width: 100%;
+}
+
+.nav-con {
+    border-bottom: 3px solid #777;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav-con a {
+    text-decoration: none;
+}
+
+
+.nav-list {
+
+}
+
+.nav-list li {
+    list-style: none;
+    display: inline;
+
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: #777;
+    background-color: transparent;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.nav-list button {
+    background-color: transparent;
+    font-size: 1rem; 
+    border: none;
+    padding: 0rem 1rem;
+}
+
+.nav-list a:hover {
+    background-color: rgba(119, 119, 119, 0.562);
+    color: white;
+}
+
+.nav-list button:hover {
+    background-color: rgba(119, 119, 119, 0.562);
+    color: white;
+}
+
+.menus {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-design {
+    /* display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transform: translate(50px, 1rem);
+    background-color: rgba(0, 0, 0, .8); */
+
+
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .8);
+    min-width: 160px;
+    z-index: 1;
+    text-align: center;
+    left: -2.5em;
+    bottom: -9.45rem;
+}
+    
+.menu-design a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-design a:hover {
+    background-color: rgba(119, 119, 119, 0.562);
+    color: white;
+}
+
+.menu {
+    display: none;
+}
+
+
+.band-name {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+section {
+
+}
+.section-container {
+    width: 100%;
+    height: 100vh;
+    max-width: 720px;
+    margin: auto;
+    padding: 6em 1em;
+}
+
+.section-container h2 {
+    text-align: center;
+    color: white;
+}
+
+.section-container > *:not(:first-child) {
+    margin-top: 1rem;
+}
+
+.nobita-band-img {
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin: 1rem;
+    border-radius: 50%;
+}
+
+.container-about p {
+    text-align: justify;
+    color: rgb(223, 223, 223);
+}
+
+
+
+#music {
+    background-color: red;
+}
+
+#merch {
+    background-color: green;
+}
+#cart {
+  height: 100vh;
+}
+
+section {
+  
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, .8);
+    width: 100%;
+}
+
+.footer-list {
+ 
+}
+
+.footer-list li  {
+    display: inline;
+    list-style: none;
+    margin: .5rem;
+}
+
+.footer-list img {
+    
+}
+
+.album-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.album-table tr {
+    border-bottom: 3px solid #777;
+}
+
+.album-table th {
+    padding: 1rem 0px;
+}
+
+.album-table th:nth-child(2n+1):not(:last-child){
+    font-weight: bold;
+}
+
+.album-table th:nth-child(2n+0):not(:last-child){
+    font-weight: lighter;
+    color: white;
+}
+
+.album-table th:nth-child(4){
+    width: 25%;
+}
+
+.album-table button {
+    padding: .5rem;
+    background-color: rgba(119, 119, 119, 0.8);
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #777;
+    cursor: pointer;
+}
+
+.album-table button:hover  {
+    background-color: rgba(119, 119, 119, 1);
+}
+
+
+.container-store {
+    height: max-content;
+}
+
+.container-store img {
+    width: 100px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger div {
+    width: 2rem;
+    height: 3px;
+    background-color: red;
+    margin: 5px;
+}
+
+.menus a.span {
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    background-color: red;
+    width: 1px;
+    height: 1px;
+}
+
+
+
+
+@media only screen and (max-width: 400px) {
+    .album-table tr{
+       display: flex;
+       flex-direction: column;
+    }
+    .nav-con {
+        position: relative;
+    }
+    .nav-list-design {
+        display: none;
+        position: absolute;
+        background-color: rgba(0, 0, 0, .8);
+        min-width: 100%;
+        z-index: 1;
+        text-align: center;
+        padding: 1rem;
+        transform: translateY(3.62rem);
+    }
+    .nav-lists {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger div {
+        background-color: white;
+    }
+    
+    .album-table th:nth-child(4) {
+        width: 100%;
+    }
+
+    .section-container {
+
+    }
+
+    .section-container .albums {
+
+    }
+
+    .menu-design {
+        bottom: -9.15rem;
+    }
+    
+    .menu-design a:hover {
+        background-color: rgba(119, 119, 119, 0.562);
+        color: white;
+    }
+    
+
+}
+
+@media only screen and (max-width: 600px) {
+    .album-table tr{
+        display: flex;
+        flex-direction: column;
+     }
+
+     .album-table th:nth-child(4) {
+        width: 100%;
+    }
+
+    
+    .section-container {
+        height: 100%;
+    }
+
+    .footer {
+
+    }
+
+}

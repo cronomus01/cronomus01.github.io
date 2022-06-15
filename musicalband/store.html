@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nobita is a Musical Band They got their band name from the Japanese word nobita which means &#8221;to grow up&#8221; and &#8221; to be strong and clear."
+    />
+    <title>Nobita &VerticalLine; Store</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="nav-con">
+        <a href="index.html?homepage"><h1 class="band-name">Nobita</h1></a>
+        <ul id="navLists" class="nav-list nav-list-design">
+          <li><a href="index.html">HOME</a></li>
+          <li class="menus" onClick="showMenu()">
+            <a>STORE</a>
+            <ul id="menuMenu" class="menu menu-design">
+              <li><a href="store.html?#music">Music</a></li>
+              <li><a href="store.html?#merch">Merch</a></li>
+              <li><a href="store.html?#cart">Cart</a></li>
+            </ul>
+          </li>
+
+          <li><a href="about.html">ABOUT</a></li>
+        </ul>
+        <div class="hamburger" onclick="hamburgerFunction()">
+          <!-- <a href="javascript:void(0);" class="hamburger"> -->
+          <div></div>
+          <div></div>
+          <div></div>
+          <!-- </a> -->
+        </div>
+      </nav>
+    </header>
+    <section class="section-container container-store" id="music">
+      <h2>MUSIC</h2>
+      <div class="music-con">
+        <div class="first-album">
+          <div>
+            <strong>Album 1</strong>
+          </div>
+          <img src="img/ikaw_lang.png" alt="" />
+          <div>
+            <span>&#8369; 500</span>
+            <button role="button">Add to Cart</button>
+          </div>
+        </div>
+        <div class="second-album">
+          <div>
+            <strong>Album 2</strong>
+          </div>
+          <img src="img/ikaw_lang.png" alt="" />
+          <div>
+            <span>&#8369; 500</span>
+            <button role="button">Add to Cart</button>
+          </div>
+        </div>
+        <div class="third-album">
+          <div>
+            <strong>Album 3</strong>
+          </div>
+          <img src="img/ikaw_lang.png" alt="" />
+          <div>
+            <span>&#8369; 500</span>
+            <button role="button">Add to Cart</button>
+          </div>
+        </div>
+        <div class="fourth-album">
+          <div>
+            <strong>Album 4</strong>
+          </div>
+          <img src="img/ikaw_lang.png" alt="" />
+          <div>
+            <span>&#8369; 500</span>
+            <button role="button">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-container container-store" id="merch">
+      <h2>MERCH</h2>
+      <div class="merch-con">
+        <div class="first-merch">
+          <div>
+            <strong>T-Shirt</strong>
+          </div>
+          <img src="img/ikaw_lang.png" alt="" />
+          <div>
+            <span>&#8369; 500</span>
+            <button role="button">Add to Cart</button>
+          </div>
+        </div>
+        <div class="second-merch">
+          <div>
+            <strong>Caps</strong>
+          </div>
+          <img src="img/ikaw_lang.png" alt="" />
+          <div>
+            <span>&#8369; 500</span>
+            <button role="button">Add to Cart</button>
+          </div>
+        </div>
+        <div class="third-merch">
+          <div>
+            <strong>Cups</strong>
+          </div>
+          <img src="img/ikaw_lang.png" alt="" />
+          <div>
+            <span>&#8369; 500</span>
+            <button role="button">Add to Cart</button>
+          </div>
+        </div>
+        <div class="fourth-merch">
+          <div>
+            <strong>Hoodies</strong>
+          </div>
+          <img src="img/ikaw_lang.png" alt="" />
+          <div>
+            <span>&#8369; 500</span>
+            <button role="button">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-container container-store" id="cart">
+      <h2>CART</h2>
+      <div>
+        <strong>ITEM</strong>
+        &lt;&gt;
+        <strong>PRICE</strong>
+        &lt;&gt;
+        <strong>QUANTITY</strong>
+      </div>
+      <div>
+        <img src="img/ikaw_lang.png" alt="" width="100" height="100" />
+        <span>T-Shirt</span>
+        &lt;&gt;
+        <span>&#8369; 500</span>
+        &lt;&gt;
+        <input type="number" value="1" />
+        <button role="button">REMOVE</button>
+      </div>
+      <div>
+        <img src="img/ikaw_lang.png" alt="" width="100" height="100" />
+        <span>Album 3</span>
+        &lt;&gt;
+        <span>&#8369; 500</span>
+        &lt;&gt;
+        <input type="number" value="1" />
+        <button role="button">REMOVE</button>
+      </div>
+      <hr />
+      <div>
+        <strong>Total</strong>
+        <span>&#8369; 500</span>
+      </div>
+      <button role="button">PURCHASE</button>
+    </section>
+    <footer class="footer">
+      <h2 class="band-name">Nobita</h2>
+      <ul class="footer-list">
+        <li>
+          <a
+            href="https://open.spotify.com/artist/4WSi2O8PQLFrKdIKOjdWPX?autoplay=true"
+            target="_blank"
+          >
+            <img
+              src="img/spotify-3384019_640.png"
+              alt="Spotify Icon"
+              width="30"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/channel/UCI5hCOvX_5p_GVxZ9Ej53ng?feature=gws_kp_artist&feature=gws_kp_artist"
+            target="_blank"
+            ><img
+              src="img/youtube-1495277_640.png"
+              alt="Youtube Icon"
+              width="30"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://music.youtube.com/channel/UCI5hCOvX_5p_GVxZ9Ej53ng?feature=gws_kp_artist&feature=gws_kp_artist"
+            target="_blank"
+            ><img src="img/Youtube_Music_icon.svg.png" alt="" width="30" />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.deezer.com/artist/71539052/radio?autoplay=true"
+            target="_blank"
+            ><img src="img/deezer.png" alt="Deezer Icon" width="30" />
+          </a>
+        </li>
+      </ul>
+    </footer>
+    <script src="javascript/main.js"></script>
+  </body>
+</html>
