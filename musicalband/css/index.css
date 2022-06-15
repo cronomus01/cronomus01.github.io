@@ -149,19 +149,8 @@ section {
 
 
 
-#music {
-    background-color: red;
-}
-
-#merch {
-    background-color: green;
-}
-#cart {
-  height: 100vh;
-}
-
-section {
-  
+#music, #merch, #cart {
+    height: 100vh;
 }
 
 .footer {
