@@ -144,7 +144,14 @@ body {
     color: rgb(223, 223, 223);
 }
 
-#music,#merch,#cart {
+#music {
+height: 100vh;
+}
+#merch {
+height: 100vh;
+}
+
+#cart {
     height: 100vh;
 }
 
