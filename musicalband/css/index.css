@@ -145,15 +145,13 @@ body {
     color: rgb(223, 223, 223);
 }
 
-.container-index {
-    height: 100%;
-}
 
 #music {
-height: 100vh;
+    height: 100vh;
 }
+
 #merch {
-height: 100vh;
+    height: 100vh;
 }
 
 #cart {
@@ -302,6 +300,11 @@ height: 100vh;
         background-color: rgba(119, 119, 119, 0.562);
         color: white;
     }
+    
+    .container-index {
+    height: 100%;
+}
+    
     
 
 }
