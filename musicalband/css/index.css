@@ -145,6 +145,10 @@ body {
     color: rgb(223, 223, 223);
 }
 
+.container-index {
+    height: 100%;
+}
+
 #music {
 height: 100vh;
 }
@@ -283,7 +287,7 @@ height: 100vh;
     }
 
     .section-container {
-
+    
     }
 
     .section-container .albums {
