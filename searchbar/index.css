@@ -241,6 +241,11 @@ section {
         border-radius: 1.5rem;
     }
 
+    .nav-con .nav-item .nav-link-signup{
+        background-color: rgba(0, 0, 255, 0.466);
+        border-radius: 1.5rem;
+    }
+
     /* hamburger icon design */
     
     .hamburger-icon {
