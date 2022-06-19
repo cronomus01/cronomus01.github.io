@@ -83,7 +83,7 @@ section {
     align-items: center;
     border: none;
     box-shadow: 3px 3px solid black;
-    padding: .5rem .8rem;
+    padding: .3rem 1rem;
 }
 
 .search-input {
@@ -142,12 +142,7 @@ section {
     /* search design mobile */
     
     .search-bar {
-        display: flex;
-        border-radius: 2rem;
-        background-color: rgba(0, 89, 255, 0.3);
-        border: none;
-        box-shadow: 3px 3px solid black;
-        padding: .5rem 1rem;
+        padding: .3rem 1rem;
     }
     
     .search-input {
@@ -252,4 +247,23 @@ section {
         display: none;
     }
     
+}
+
+@media only screen and (max-width: 320px) {
+    /* navigation design */
+    .nav-bar {
+        padding: .5rem 0px;
+    }
+    .nav-con .nav-item .nav-link:hover {
+        border-radius: 0px;
+    }
+
+    .nav-con .nav-item .nav-link-signup{
+        border-radius: 0px;
+    }
+
+    /* search design */
+    .search-bar {
+        border-radius: 0px;
+    }
 }
