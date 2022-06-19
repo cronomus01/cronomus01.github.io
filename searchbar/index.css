@@ -51,29 +51,53 @@ section {
     line-height: 2.5rem;
     display: inline-block;
     width: 100%;
-
+ 
+    --background-color-half-opacity: rgba(0, 89, 255, 0.5);
 }
 
-.nav-con .nav-item .nav-link::after {
+.nav-con .nav-item .nav-link::before {
     position: absolute;
-    height: 3px;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
     content: "";
-    width: 0;
-    background-color: rgba(0, 0, 255, 0.466);
     border-radius: 5px;
-    transition: all .2s ease 0s;
+    transition: all .2s ease-out 0s;
+    background-color: var(--background-color-half-opacity);
+    /* if the top is set to 1 it will go down to the bottom of the screen 
+    if the height is set to anything that doesn't cover the entire link container. */
+    height: 3px;
+    top: 1;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* tips if the top right bottom and left is set 0 it will cover the entire width of the link */
+
+    /* this will position the before to the back of the element */
+    z-index: -1;
+
+
+/* when the user finish the hover the animation background will reduce from left to the right*/
+/* basically after the hover state the background will reduce to the right */
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+    transform-origin: right;
+
+
 }
 
-.nav-con .nav-item .nav-link-signup::after {
-    width: 100%;
+.nav-con .nav-item .nav-link:hover::before,
+.nav-con .nav-item .nav-link:focus::before {
+    /* when the user hover in the link it will start on left and it will expand to the right */
+    /* basically when the user hover it will start on the left side of the link */
+
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: color 300ms ease-in-out;
 }
 
-.nav-con .nav-item .nav-link:hover::after {
-    width: 100%;
+.nav-con .nav-item .nav-link:hover,
+.nav-con .nav-item .nav-link:focus {
+    color: black;
 }
+
 
 /* search design */
 .search-bar {
