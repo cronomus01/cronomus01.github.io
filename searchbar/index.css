@@ -1,0 +1,243 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(-135deg, lightblue, rgba(0, 0, 255, 0.5));
+}
+
+/* navigation design */
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 3em;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 89, 255, 0.377);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-bar .nav-bar-title { 
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.nav-con {
+    position: relative;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-con .nav-item {
+    display: inline-block;
+}
+
+.nav-con .nav-item .nav-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    line-height: 2.5rem;
+    display: inline-block;
+    width: 100%;
+
+}
+
+.nav-con .nav-item .nav-link::after {
+    position: absolute;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    content: "";
+    width: 0;
+    background-color: rgba(0, 0, 255, 0.466);
+    border-radius: 5px;
+    transition: all .2s ease 0s;
+}
+
+.nav-con .nav-item .nav-link-signup::after {
+    width: 100%;
+}
+
+.nav-con .nav-item .nav-link:hover::after {
+    width: 100%;
+}
+
+/* search design */
+.search-bar {
+    display: flex;
+    border-radius: 2rem;
+    background-color: rgba(0, 89, 255, 0.3);
+    align-items: center;
+    border: none;
+    box-shadow: 3px 3px solid black;
+    padding: .5rem .8rem;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+
+.search-input::placeholder {
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 200;
+}
+
+.search-button {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    /* border-left: 5px black solid; */
+    border: none;
+
+}
+
+.search-button img {
+    display: block;
+}
+
+/* hamburger icon */
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    justify-content: center;
+
+}
+
+.hamburger-none {
+   display: none;
+}
+
+.hamburger-icon .hamburger-item {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 2.5rem;
+    height: .3rem;
+}
+
+
+/* mobile view */
+
+@media only screen and (max-width: 900px) {
+
+    /* search design mobile */
+    
+    .search-bar {
+        display: flex;
+        border-radius: 2rem;
+        background-color: rgba(0, 89, 255, 0.3);
+        border: none;
+        box-shadow: 3px 3px solid black;
+        padding: .5rem 1rem;
+    }
+    
+    .search-input {
+        width: 100%;
+        border: none;
+        outline: none;
+        background: transparent;
+        color: white;
+    }
+    
+    .search-input::placeholder {
+        color: white;
+        letter-spacing: 1px;
+        font-weight: 200;
+    }
+    
+    .search-button {
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        /* border-left: 5px black solid; */
+        height: 100%;
+        border: none;
+    }
+    
+    .search-button img {
+        display: block;
+    }
+    
+
+    /* hamburger icon mobile */
+
+    .hamburger-none {
+        display: flex;
+    }
+
+    .hamburger-icon .hamburger-item {
+        background-color: white;
+        width: 2rem;
+        height: .2rem;
+    }
+
+    /* navigation mobile view */
+
+    .nav-bar .hamburger-icon{
+        order: 4;
+    }
+
+    .nav-con {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    /* navigation bar design */
+    .nav-bar {
+        gap: .5rem;
+        width: 100%;
+        padding-bottom: .8rem;
+    }
+
+    .nav-bar > * {
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav-con {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: .5rem;
+    }
+    .nav-link {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .nav-con .nav-item .nav-link::after {
+       height: 100%;
+       border-radius: 2rem;
+    }
+
+    /* hamburger icon design */
+    
+    .hamburger-icon {
+        display: none;
+    }
+    
+}
