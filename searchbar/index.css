@@ -93,11 +93,6 @@ section {
     transition: color 300ms ease-in-out;
 }
 
-.nav-con .nav-item .nav-link:hover,
-.nav-con .nav-item .nav-link:focus {
-    color: black;
-}
-
 
 /* search design */
 .search-bar {
